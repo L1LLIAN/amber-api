@@ -7,5 +7,5 @@ RUN useradd -g spring spring
 # Run app from a non-priveleged user
 USER spring:spring
 
-COPY "./target/backend-0.0.1-SNAPSHOT.jar" app.jar
+COPY "./target/amber-api-0.0.1-SNAPSHOT.jar" app.jar
 ENTRYPOINT [ "java", "-jar", "/app.jar" ]
